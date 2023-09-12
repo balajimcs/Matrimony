@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "727040272170",
+    "project_id": "tamil-vivaham",
+    "storage_bucket": "tamil-vivaham.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727040272170:android:cde6b9490107bbd929e053",
+        "android_client_info": {
+          "package_name": "com.tamilvivaham.thirumanam"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "727040272170-m2ap7bhbbpv5uh1vm9i9jhfhc0ae8etl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tamilvivaham.thirumanam",
+            "certificate_hash": "80859bcfa350f488b6ba77133bd2fc5559c5bcb8"
+          }
+        },
+        {
+          "client_id": "727040272170-of6eq311h6rdup53kltoqjurnb3lq469.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzKxO_ytVIBbZdrWtvXtzV2ch6spF7fX8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "727040272170-of6eq311h6rdup53kltoqjurnb3lq469.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "727040272170-i4iuakqrfsdt0p1gtam9sk7nkm9gbo9n.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.tamilvivaham.thirumanam"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

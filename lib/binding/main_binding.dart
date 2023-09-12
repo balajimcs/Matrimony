@@ -1,0 +1,94 @@
+import 'package:get/get.dart';
+import 'package:thirumanam/app_localization.dart';
+import 'package:thirumanam/controller/address_register_controller.dart';
+import 'package:thirumanam/controller/carrier_deatils_controller.dart';
+import 'package:thirumanam/controller/change_password_controller.dart';
+import 'package:thirumanam/controller/chat_body_controller.dart';
+import 'package:thirumanam/controller/communication_register.dart';
+import 'package:thirumanam/controller/connected_people_controller.dart';
+import 'package:thirumanam/controller/dashboard_controller.dart';
+import 'package:thirumanam/controller/detailed_filter_controller.dart';
+import 'package:thirumanam/controller/dropdown_controller.dart';
+import 'package:thirumanam/controller/forgot_otp_controller.dart';
+import 'package:thirumanam/controller/home_controller.dart';
+import 'package:thirumanam/controller/jathagam_details_controller.dart';
+import 'package:thirumanam/controller/login_with_sent_controller.dart';
+import 'package:thirumanam/controller/login_with_verify_controller.dart';
+import 'package:thirumanam/controller/package_controller.dart';
+import 'package:thirumanam/controller/personal_details_controller.dart';
+import 'package:thirumanam/controller/post_feed_controller.dart';
+import 'package:thirumanam/controller/received_proposal_controller.dart';
+import 'package:thirumanam/controller/register_controller.dart';
+import 'package:thirumanam/controller/reset_password_controller.dart';
+import 'package:thirumanam/controller/search_detailed_filter_controller.dart';
+import 'package:thirumanam/controller/sent_proposal_controller.dart';
+import 'package:thirumanam/controller/specfic_details_controller.dart';
+import 'package:thirumanam/controller/splash_controller.dart';
+import 'package:thirumanam/controller/stepper_register_controller.dart';
+import 'package:thirumanam/controller/update_app_controller.dart';
+import 'package:thirumanam/controller/update_controllers/address_update.dart';
+import 'package:thirumanam/controller/update_controllers/carrier_update.dart';
+import 'package:thirumanam/controller/update_controllers/communication_update.dart';
+import 'package:thirumanam/controller/update_controllers/family_update.dart';
+import 'package:thirumanam/controller/update_controllers/horoscopic_controller.dart';
+import 'package:thirumanam/controller/update_controllers/jathagam_update.dart';
+import 'package:thirumanam/controller/update_controllers/permement_address_update.dart';
+import 'package:thirumanam/controller/update_controllers/personal_update.dart';
+import 'package:thirumanam/controller/update_controllers/profile_controller.dart';
+import 'package:thirumanam/controller/verify_otp_controller.dart';
+import 'package:thirumanam/controller/wishlist_controller.dart';
+import 'package:thirumanam/controller/search_controller.dart';
+import 'package:thirumanam/models/chat_main_model.dart';
+
+import '../controller/detailed_page_controller.dart';
+import '../controller/family_details_controller.dart';
+import '../preferences/app_preference.dart';
+
+class MainBinding extends Bindings {
+
+  @override
+  void dependencies() {
+    Get.lazyPut<AppPreference>(()=> AppPreference(), fenix: true);
+    Get.lazyPut<SplashController>(()=> SplashController(), fenix: true);
+    Get.lazyPut<RegisterController>(()=> RegisterController(), fenix: true);
+    Get.lazyPut<HomeController>(()=> HomeController(), fenix: true);
+    Get.lazyPut<DashboardController>(()=> DashboardController(), fenix: true);
+    Get.lazyPut<ForgotOtpController>(()=> ForgotOtpController(), fenix: true);
+    Get.lazyPut<verifyOtpController>(()=> verifyOtpController(), fenix: true);
+    Get.lazyPut<ChangepasswordController>(()=> ChangepasswordController(), fenix: true);
+    Get.lazyPut<ResetpasswordController>(()=> ResetpasswordController(), fenix: true);
+    Get.lazyPut<StepperRegisterController>(()=> StepperRegisterController(), fenix: true);
+    Get.lazyPut<AdresssRegisterController>(()=> AdresssRegisterController(), fenix: true);
+    Get.lazyPut<CommunicationRegisterController>(()=> CommunicationRegisterController(), fenix: true);
+    Get.lazyPut<PersonalRegisterController>(()=> PersonalRegisterController(), fenix: true);
+    Get.lazyPut<CarrierRegisterController>(()=> CarrierRegisterController(), fenix: true);
+    Get.lazyPut<JathgamRegisterController>(()=> JathgamRegisterController(), fenix: true);
+    Get.lazyPut<FamilyRegisterController>(()=> FamilyRegisterController(), fenix: true);
+    Get.lazyPut<AddressUpdateController>(()=> AddressUpdateController(), fenix: true);
+    Get.lazyPut<CommunicationUpdateController>(()=> CommunicationUpdateController(), fenix: true);
+    Get.lazyPut<PersonalUpdateController>(()=> PersonalUpdateController(), fenix: true);
+    Get.lazyPut<CarrierUpdateController>(()=> CarrierUpdateController(), fenix: true);
+    Get.lazyPut<JathagamUpdateController>(()=> JathagamUpdateController(), fenix: true);
+    Get.lazyPut<FamilyUpdateController>(()=> FamilyUpdateController(), fenix: true);
+    Get.lazyPut<PermenentAddressUpdateController>(()=> PermenentAddressUpdateController(), fenix: true);
+    Get.lazyPut<ReceiviedProporsalController>(()=> ReceiviedProporsalController(), fenix: true);
+    Get.lazyPut<SentProporsalController>(()=> SentProporsalController(), fenix: true);
+    Get.lazyPut<PostFeedController>(()=> PostFeedController(), fenix: true);
+    Get.lazyPut<WishListController>(()=> WishListController(), fenix: true);
+    Get.lazyPut<DetailedFilterController>(()=> DetailedFilterController(), fenix: true);
+    Get.lazyPut<LoginWithOtpController>(()=> LoginWithOtpController(), fenix: true);
+    Get.lazyPut<LoginWithVerifyOtpController>(()=> LoginWithVerifyOtpController(), fenix: true);
+    Get.lazyPut<SearchDetailedFilterController>(()=> SearchDetailedFilterController(), fenix: true);
+    Get.lazyPut<HoroScopicController>(()=> HoroScopicController(), fenix: true);
+    Get.lazyPut<DetailedController>(()=> DetailedController(), fenix: true);
+    Get.lazyPut<SearchController>(()=> SearchController(), fenix: true);
+    Get.lazyPut<DropDownController>(()=> DropDownController(), fenix: true);
+    Get.lazyPut<ProfileController>(()=> ProfileController(), fenix: true);
+    Get.lazyPut<ChatBodyController>(()=> ChatBodyController(), fenix: true);
+    Get.lazyPut<SpecficDetailsController>(()=> SpecficDetailsController(), fenix: true);
+    Get.lazyPut<GetConnectedController>(()=> GetConnectedController(), fenix: true);
+    Get.lazyPut<PackageController>(()=> PackageController(), fenix: true);
+    Get.lazyPut<LocalizationService>(()=> LocalizationService(), fenix: true);
+    Get.lazyPut<UpdateAppController>(()=> UpdateAppController(), fenix: true);
+  }
+}
